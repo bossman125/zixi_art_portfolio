@@ -1,0 +1,12 @@
+SCRAPBOOK PORTFOLIO — LAYOUT REPAIR
+
+1. Make a copy of your website folder.
+2. Extract this ZIP and put all five website files in that folder, replacing earlier versions.
+3. Keep images/ and videos/ alongside index.html, with the original media filenames.
+4. Open index.html. Refresh if you previously had it open.
+
+The galleries now use CSS columns, eliminating the old JavaScript row measurements. Photos keep their natural proportions and are not cropped. Reading order runs down each column. Missing thumbnails show their expected filename instead of an unexplained blank.
+
+Original artwork data and image viewer are retained. Sideways source photos are NOT automatically rotated: their correct orientation cannot be inferred without seeing them. Upload the affected images (both thumbnail and full-size versions) for correction. Existing orientation metadata is respected by supporting browsers.
+
+Media folders are not included. Full visual testing was not possible without them. Google Fonts require an internet connection; fallback fonts work offline.
