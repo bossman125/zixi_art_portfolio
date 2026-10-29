@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Zixi Lin — Wushu</title>
+<meta content="Wushu videos by Zixi Lin — sword, spear, and performance routines." name="description"/>
+<link href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23FF3EA5'/%3E%3Ctext x='16' y='23' font-size='17' font-family='Arial Black, sans-serif' font-weight='900' fill='%23FFF4E4' text-anchor='middle'%3EZ%3C/text%3E%3C/svg%3E" rel="icon"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="styles.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="craft-bar">
+  <span class="craft-brand">✿ zixi.crafts</span>
+  <a class="craft-link" href="index.html">← Back to Portfolio</a>
+</div>
+<!-- ══════════ HERO ══════════ -->
+<header class="hero wushu-hero">
+  <div class="hero-inner">
+    <h1 class="hero-title">ZIXI LIN<br/>WUSHU</h1>
+    <p class="hero-sub">Sword, spear, and performance routines</p>
+  </div>
+</header>
+<!-- ══════════ GALLERY ══════════ -->
+<main id="galleries"></main>
+<footer class="footer">
+  <p class="footer-name">ZIXI LIN</p>
+  <p class="footer-meta">Wushu · 2026</p>
+</footer>
+<!-- ══════════ LIGHTBOX ══════════ -->
+<div aria-label="Wushu video viewer" aria-modal="true" class="lightbox" id="lightbox" role="dialog">
+  <button aria-label="Close viewer" class="lb-close" id="lbClose">✕</button>
+  <button aria-label="Previous video" class="lb-nav lb-prev" id="lbPrev">←</button>
+  <figure class="lb-figure">
+    <div class="lb-media" id="lbMedia"></div>
+    <figcaption class="lb-caption">
+      <span class="lb-title" id="lbTitle"></span>
+      <span class="lb-note" id="lbNote"></span>
+    </figcaption>
+  </figure>
+  <button aria-label="Next video" class="lb-nav lb-next" id="lbNext">→</button>
+</div>
+<script src="wushu.js"></script>
+</body>
+</html>

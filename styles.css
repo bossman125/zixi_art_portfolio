@@ -618,6 +618,8 @@ body{background:var(--yellow);font-family:'Space Grotesk',Arial,sans-serif}
 .hero-sub{margin:22px auto 0;max-width:300px;font-size:13px;font-weight:400;line-height:1.4}
 .hero-nav{position:absolute;inset:0;display:block;margin:0;pointer-events:none}.hero-nav .pill{position:absolute;pointer-events:auto;font-family:'Permanent Marker',cursive;font-size:clamp(22px,2.8vw,36px);border:0;padding:0;border-radius:0;background:transparent!important;box-shadow:none!important;color:#fff8bb;line-height:1.2}
 .pill:nth-child(1){top:16%;right:13%;transform:rotate(14deg)}.pill:nth-child(2){bottom:15%;left:13%;transform:rotate(16deg);color:#cdf5ed}.pill:nth-child(3){top:15%;left:12%;transform:rotate(-20deg);color:#d5ffff}.pill:nth-child(4){right:8%;bottom:15%;transform:rotate(-7deg)}.hero-nav .pill:nth-child(5){right:3%;top:45%;color:#d4e55c;transform:rotate(15deg)}.hero-nav .pill:nth-child(6){left:3%;top:46%;color:#d4e55c;transform:rotate(-15deg)}
+.hero-nav .pill:nth-child(7){top:6%;left:46%;color:#fff;transform:rotate(8deg);text-shadow:0 2px 4px #000}
+.pill-wushu:hover{color:var(--pink)}
 .hero:before{content:'';position:absolute;top:10px;left:28%;width:95px;height:25px;background:#f7edcf80;transform:rotate(-10deg)}
 .section{padding:30px clamp(16px,4vw,50px) 38px;border-bottom:24px solid var(--yellow)}
 .section:nth-child(3n+1){background:#73cee2}.section:nth-child(3n+2){background:#c8de47}.section:nth-child(3n){background:#efafd7}
@@ -633,3 +635,14 @@ body{background:var(--yellow);font-family:'Space Grotesk',Arial,sans-serif}
 @media(min-width:1500px){.grid{columns:5}}@media(max-width:1000px){.grid{columns:3}}@media(max-width:700px){.grid{columns:2;column-gap:14px}.hero{min-height:350px;padding:110px 22px}.hero-nav .pill{font-size:clamp(18px,4vw,24px)}.hero-nav .pill:nth-child(5),.hero-nav .pill:nth-child(6){font-size:clamp(18px,4vw,24px)}.hero-title:after{width:90px;height:40px}.section{padding:25px 16px 30px}}
 @media(max-width:360px){.grid{columns:1}.hero-title{font-size:23px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}}
+
+/* ── WUSHU PAGE ───────────────────────────── */
+.craft-bar{display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+.craft-brand{font-family:'Permanent Marker',cursive}
+.craft-link{font-weight:700;font-size:0.9rem;text-decoration:none;color:var(--ink);background:var(--paper);border:2.5px solid var(--ink);border-radius:999px;padding:0.4em 1em;box-shadow:3px 3px 0 var(--ink);transition:transform .15s ease,box-shadow .15s ease}
+.craft-link:hover,.craft-link:focus-visible{transform:translate(-1px,-1px);box-shadow:5px 5px 0 var(--ink);background:var(--pink);color:var(--paper);border-color:var(--pink)}
+.wushu-hero{background:#73cee2}
+.card-media{position:relative}
+.video-play{position:absolute;inset:0;display:grid;place-items:center;font-size:2.2rem;color:#fff;background:rgba(0,0,0,.25);text-shadow:0 2px 6px #000;pointer-events:none;opacity:0;transition:opacity .2s ease}
+.card:hover .video-play,.card:focus-visible .video-play{opacity:1}
+@media(prefers-reduced-motion:reduce){.video-play{transition:none}}
